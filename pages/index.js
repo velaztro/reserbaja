@@ -1,65 +1,17 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Layout, { siteTitle } from '../components/layout'
+import style from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+    <Layout home>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+      <Head><title>{siteTitle}</title></Head>
+      Phone: <span itemProp="telephone"><a href="tel:+123456890">
+234567890</a></span>
+      <section>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio modi eos a nobis suscipit earum quod ad tenetur quibusdam possimus ducimus, architecto distinctio ab nostrum, in accusantium dicta tempore eveniet numquam corporis, quaerat placeat dolor quo. Labore vitae vero iste modi incidunt dolores cum praesentium iure perspiciatis accusantium earum hic maxime suscipit odit nulla debitis quos libero aspernatur, iusto dolore voluptate nihil officiis unde laboriosam! Officia nulla magni aspernatur. Laudantium nisi odit labore facere. Porro suscipit sunt obcaecati nihil quidem cupiditate optio totam eaque dolores numquam itaque adipisci beatae temporibus facere nisi accusamus deserunt, recusandae saepe, neque cum, deleniti quibusdam quo. Quidem praesentium ducimus, doloremque, sit error ipsum, illum sed iusto quibusdam aperiam nam aspernatur blanditiis! Amet vero, cumque suscipit repudiandae nesciunt porro corporis maxime quia, temporibus id saepe impedit dicta exercitationem numquam ea ipsum facilis harum est ab consectetur officiis dolor voluptatem voluptate. Veritatis, in magni voluptate atque sed ex commodi officiis, voluptas vero magnam necessitatibus placeat iusto provident itaque accusamus iste. Consequuntur et nemo sequi, a tempore, ab suscipit quidem voluptatibus atque quod necessitatibus accusamus nihil doloribus in amet magni totam quas commodi quia. Voluptatibus voluptatum quibusdam aliquid ad nobis delectus quasi. Quas, ut? Cumque, voluptatem vel. Dolor beatae aut facere officiis impedit ipsa sint, ea aliquid recusandae itaque soluta magni nesciunt asperiores laborum cumque, atque error omnis dolorum quas accusantium porro dolore? Atque maxime consectetur architecto nam quo impedit consequatur. Similique tempora tenetur rem, laboriosam pariatur facilis dolor adipisci odio laudantium ab amet. Eos labore mollitia odio laudantium ipsa quasi est soluta optio officiis error nemo ea vitae possimus, accusamus explicabo. Reprehenderit odit cum neque ut accusamus error, unde alias tempore consequuntur! Fuga dicta officiis facere distinctio rerum tenetur ea sint. Nisi natus saepe vero culpa. Pariatur autem neque voluptatibus necessitatibus minima magni a, quae nesciunt recusandae aliquid, consectetur qui eligendi non vitae quos reiciendis debitis reprehenderit officia itaque ut quod esse, quis perspiciatis sed. Vero sunt repellat, doloribus velit cupiditate magni error tempore adipisci sit in obcaecati voluptatum quae illo optio nam et nihil animi itaque ipsam aliquid facilis repellendus, veritatis impedit! Totam officiis ea eaque adipisci nemo. Temporibus accusantium, fugit dignissimos pariatur, eius cumque voluptatibus nesciunt nulla voluptatem rerum non quidem neque unde mollitia nostrum error? Eos excepturi alias perferendis sunt facere dolor nostrum voluptas assumenda quibusdam odit deleniti optio accusamus illo voluptatibus aliquam iusto quod tenetur, culpa ab voluptatum unde at mollitia provident. Officiis sunt debitis eaque aspernatur laborum perferendis aliquid. Voluptatibus voluptatem illo distinctio aut nam temporibus consequatur hic corporis reprehenderit aliquid ipsa aperiam omnis nostrum, accusamus ducimus facere? Molestiae, error, voluptatibus nam quasi rem aperiam pariatur fuga repellat expedita iure, eum ab? Eos adipisci sint iure dolorum? Aliquid deserunt vitae delectus eius reprehenderit officia eaque. Porro ipsam incidunt saepe! Ullam vel quisquam omnis sed sit explicabo consequatur tempore quo neque maxime numquam est sequi, nemo magni amet facere laudantium voluptatum error quas commodi molestias? Reprehenderit, quasi? Expedita officia sequi, iste, tempore architecto officiis optio ipsum animi voluptates eos esse minus eaque illum?</section>
+    </Layout >
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
   )
 }
