@@ -92,12 +92,12 @@ const Layout = ({ children }) => {
                     <div className={styles.titleContact}>Contacto<span onClick={closeMenu} className={styles.closeMenu}>&#10005;</span></div>
                     <div className={styles.listArea}>
                         <div className={styles.listGroup}>
-                            <a target='_blank' rel='noopener' href="https://g.page/ReserBaja?share" className={styles.listMenu}> <Image className={styles.icons} src="/Images/menu/location.svg" width={50} height={50} />Ubicacion</a>
-                            <a target='_blank' rel='noopener' href="https://api.whatsapp.com/send?phone=526642911263‬&text=¡Hola!%20Quisiera%20mas%20informacion%20de:%20" className={styles.listMenu}> <Image className={styles.icons} src="/Images/menu/whatsapp.svg" width={50} height={50} />WhatsApp</a>
-                            <a href="tel:+529720474" className={styles.listMenu}> <Image className={styles.icons} src="/Images/menu/phone.svg" width={50} height={50} /> Llamar</a>
-                            <a href="mailto:reserbaja@gmail.com?subject=<COTIZACIÓN>" className={styles.listMenu}> <Image className={styles.icons} src="/Images/menu/email.svg" width={50} height={50} />Correo</a>
-                            <a href="/#/" className={styles.listMenu}> <Image className={styles.icons} src="/Images/menu/quotation.svg" width={50} height={50} />Cotizacion</a>
-                            <a href="http://m.me/reserbaja?ref=webpage" className={styles.listMenu}> <Image className={styles.icons} src="/Images/menu/messenger.svg" width={50} height={50} />Messenger</a>
+                            <a target='_blank' rel='noopener' href="https://g.page/ReserBaja?share" className={styles.listMenu}> <Image alt="Ubicacion ReserBaja" className={styles.icons} src="/Images/menu/location.svg" width={50} height={50} />Ubicacion</a>
+                            <a target='_blank' rel='noopener' href="https://api.whatsapp.com/send?phone=526642911263‬&text=¡Hola!%20Quisiera%20mas%20informacion%20de:%20" className={styles.listMenu}> <Image alt="Whatsapp ReserBaja" className={styles.icons} src="/Images/menu/whatsapp.svg" width={50} height={50} />WhatsApp</a>
+                            <a href="tel:+529720474" className={styles.listMenu}> <Image alt="Celular Telefono ReserBaja" className={styles.icons} src="/Images/menu/phone.svg" width={50} height={50} /> Llamar</a>
+                            <a href="mailto:reserbaja@gmail.com?subject=<COTIZACIÓN>" className={styles.listMenu}> <Image alt="Correo ReserBaja" className={styles.icons} src="/Images/menu/email.svg" width={50} height={50} />Correo</a>
+                            <a href="/#/" className={styles.listMenu}> <Image alt="Cotizacion ReserBaja" className={styles.icons} src="/Images/menu/quotation.svg" width={50} height={50} />Cotizacion</a>
+                            <a href="http://m.me/reserbaja?ref=webpage" className={styles.listMenu}> <Image alt="Messenger ReserBaja" className={styles.icons} src="/Images/menu/messenger.svg" width={50} height={50} />Messenger</a>
                             <a href="/#/" className={styles.listMenu}>c</a>
                             <a href="/#/" className={styles.listMenu}>q</a>
                             <a href="/#/" className={styles.listMenu}>w</a>
@@ -109,16 +109,16 @@ const Layout = ({ children }) => {
                 <div className={styles.nav}>
                     <Link href='/'>
                         <a className={styles.navList} onClick={closeMenu}>
-                            <Image src="/Images/home.svg" alt='pagina de inicio' width={30} height={30} />
+                            <Image alt="Inicio ReserBaja" src="/Images/home.svg" alt='pagina de inicio' width={30} height={30} />
                             <span>Inicio</span>
                         </a>
                     </Link>
                     <a className={styles.navList} onClick={toggle} >
-                        <Image src="/Images/product.svg" alt='menu de servicios' width={30} height={30} />
+                        <Image alt="Alarmas estereos cerrajeria auto carro ReserBaja" src="/Images/product.svg" alt='menu de servicios' width={30} height={30} />
                         <span>Servicios</span>
                     </a>
                     <a className={styles.navList} onClick={toggleContact} >
-                        <Image src="/Images/contact.svg" alt='menu de contacto' width={30} height={30} />
+                        <Image alt="Contacto Informacion ReserBaja" src="/Images/contact.svg" alt='menu de contacto' width={30} height={30} />
                         <span>Contacto</span>
                     </a>
                 </div>
