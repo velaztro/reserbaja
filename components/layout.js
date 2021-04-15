@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useState } from 'react'
 
 
-export const siteTitle = "ReserBaja | Seguridad Automotriz";
+export const siteTitle = "ReserBaja | Seguridad Automotriz | Auto Alarmas | En Tijuana";
 
 const Layout = ({ children }) => {
 
@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
                 <link rel="icon" href="/favicon.ico" />
                 <meta
                     name="description"
-                    content="Negocio de auto alarmas, cerrajeria automotriz, estereos y mas."
+                    content="Encuentra con nosotros servicios relacionados con seguridad automotriz, auto alarmas, cerrajeria automotriz, estereos y mas."
                 />
                 <meta
                     property="og:image"
@@ -58,14 +58,19 @@ const Layout = ({ children }) => {
                 <h2 className={styles.headerSubtitle}>SEGURIDAD AUTOMOTRIZ</h2>
             </header>
 
-            <main>
+            <main className={styles.main}>
                 {children}
             </main>
+
+            <footer className={styles.footer}>
+                <p>RESERBAJA 2021</p>
+                <p>Tijuana, Baja California, Mexico</p>
+            </footer>
 
             <div className={styles.bottom}>
 
 
-                <div id={styles.productsMenu} className={showMe ? styles.show : null}>
+                <div id={styles.productsMenu} className={showMe ? styles.show : styles.hide}>
                     <p className={styles.titleMenu}>Servicios y Productos <span onClick={closeMenu} className={styles.closeMenu}>&#10005;</span></p>
                     <div className={styles.listArea}>
                         <div className={styles.listGroup}>
@@ -74,22 +79,11 @@ const Layout = ({ children }) => {
                             <a href="/#/" className={styles.listMenu}>Faros</a>
                             <a href="/#/" className={styles.listMenu}>Estereo</a>
                             <a href="/#/" className={styles.listMenu}>Camaras</a>
-                            <a href="/#/" className={styles.listMenu}>x</a>
-                            <a href="/#/" className={styles.listMenu}>c</a>
-                            <a href="/#/" className={styles.listMenu}>q</a>
-                            <a href="/#/" className={styles.listMenu}>w</a>
-                            <a href="/#/" className={styles.listMenu}>e</a>
-                            <a href="/#/" className={styles.listMenu}>e</a>
-                            <a href="/#/" className={styles.listMenu}>e</a>
-                            <a href="/#/" className={styles.listMenu}>e</a>
-                            <a href="/#/" className={styles.listMenu}>e</a>
-                            <a href="/#/" className={styles.listMenu}>x</a>
-                            <a href="/#/" className={styles.listMenu}>x</a>
                         </div>
                     </div>
                 </div>
 
-                <div id={styles.contactMenu} className={showContact ? styles.showContact : null}>
+                <div id={styles.contactMenu} className={showContact ? styles.show : styles.hide}>
                     <div className={styles.titleContact}>Contacto<span onClick={closeMenu} className={styles.closeMenu}>&#10005;</span></div>
                     <div className={styles.listArea}>
                         <div className={styles.listGroup}>
@@ -99,29 +93,25 @@ const Layout = ({ children }) => {
                             <a href="mailto:reserbaja@gmail.com?subject=<COTIZACIÓN>" className={styles.listMenu}> <Image alt="Correo ReserBaja" className={styles.icons} src="/Images/menu/email.svg" width={50} height={50} />Correo</a>
                             <a href="/#/" className={styles.listMenu}> <Image alt="Cotizacion ReserBaja" className={styles.icons} src="/Images/menu/quotation.svg" width={50} height={50} />Cotizacion</a>
                             <a href="http://m.me/reserbaja?ref=webpage" className={styles.listMenu}> <Image alt="Messenger ReserBaja" className={styles.icons} src="/Images/menu/messenger.svg" width={50} height={50} />Messenger</a>
-                            <a href="/#/" className={styles.listMenu}>c</a>
-                            <a href="/#/" className={styles.listMenu}>q</a>
-                            <a href="/#/" className={styles.listMenu}>w</a>
-                            <a href="/#/" className={styles.listMenu}>e</a>
                         </div>
                     </div>
                 </div>
 
                 <div className={styles.nav}>
                     <Link href='/'>
-                        <a className={styles.navList} onClick={closeMenu}>
+                        <button onTouchStart={null} className={styles.navList} onClick={closeMenu}>
                             <Image alt="Inicio ReserBaja" src="/Images/home.svg" alt='pagina de inicio' width={30} height={30} />
                             <span>Inicio</span>
-                        </a>
+                        </button>
                     </Link>
-                    <a className={styles.navList} onClick={toggle} >
+                    <button onTouchStart={null} className={styles.navList} onClick={toggle} >
                         <Image alt="Alarmas estereos cerrajeria auto carro ReserBaja" src="/Images/product.svg" alt='menu de servicios' width={30} height={30} />
                         <span>Servicios</span>
-                    </a>
-                    <a className={styles.navList} onClick={toggleContact} >
+                    </button>
+                    <button onTouchStart={null} className={styles.navList} onClick={toggleContact} >
                         <Image alt="Contacto Informacion ReserBaja" src="/Images/contact.svg" alt='menu de contacto' width={30} height={30} />
                         <span>Contacto</span>
-                    </a>
+                    </button>
                 </div>
 
             </div>
