@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
 			<Head>
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="True" />
 				<link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-				<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet"></link>
+				<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"></link>
 				<link rel="icon" href="/favicon.ico" />
 				<meta name="description" content="En ReserBaja te ofrecemos servicios relacionados con seguridad automotriz, auto alarmas, cerrajeria automotriz, estereos y mas. En ReserBaja tu carro esta seguro."/>
 				<meta property="og:image" content={`https://og-image.vercel.app/${encodeURI( siteTitle )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}/>
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
 			<header className={styles.header} id="blurHeader">
 				<h1 className={styles.headerTitle}>ReserBaja</h1>
-				<h5 className={styles.headerSubtitle}>SEGURIDAD AUTOMOTRIZ</h5>
+				<span className={styles.headerSubtitle}>SEGURIDAD AUTOMOTRIZ</span>
 			</header>
 
 			<main className={styles.main} id="blurMain">
