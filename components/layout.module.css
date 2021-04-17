@@ -16,22 +16,17 @@
     align-items: stretch;
 }
 
-#opacity {
-    background: rgba(0, 0, 0, 0.411) !important;
-    transition: all 0.5s ease-in-out;
-    z-index: 10;
-}
-
 .header {
+    height: 18vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #F4F4F4;
     padding: 1% 0;
-    box-shadow: 0 0 20px 0 rgba(200, 200, 200, 0.815);
-    grid-area: header;
+    box-shadow: 0 0 1.5vw 0 rgba(200, 200, 200, 0.815);
     flex-grow: 0;
+    transition: all 0.5s ease;
 }
 
 .headerTitle {
@@ -48,140 +43,9 @@
 }
 
 .main {
-    grid-area: content;
     flex-grow: 1;
     margin-bottom: 5%;
-}
-
-.bottom {
-    position: sticky;
-    position: -webkit-sticky;
-    bottom: 0;
-    background-color: white;
-    border-radius: 6vw 6vw 0 0;
-    display: flex;
-    flex-direction: column;
-    grid-area: toolbar;
-    flex-grow: 0;
-}
-
-.nav {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #F4F4F4;
-    position: sticky;
-    position: -webkit-sticky;
-    bottom: 0;
-    box-shadow: 0 0 2vw 0 rgba(158, 158, 158, 0.568);
-}
-.navList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0 5%;
-    padding: 1.5% 0;
-    font-size: 14px;
-    background-color: transparent;
-}
-.navList:active{
-    background-color: #dddddd;
-    box-shadow: none;
-}
-.navList:focus-within{
-    background-color: #dddddd;
-    box-shadow: none;
-}
-.navList:hover{
-    background-color: #dddddd;
-    box-shadow: none;
-}
-
-
-.show, .showContact {
-    height: 70vh !important;
-    order: 0;
-    opacity: 1;
-    transition: all 0.4s ease-in-out;
-}
-.hide {
-    height: 0vh !important;
-    transition: all 0.4s ease-in-out;
-    position: absolute;
-    bottom: 0;
-    order: -10;
-    opacity: 0;
-}
-
-#contactMenu, #productsMenu {
-    width: 100%;
-    height: 0 ;
-    overflow: hidden;
-    position: sticky;
-    position: -webkit-sticky;
-    bottom: 0;
-    border: none;
-    border-radius: 5vw 5vw 0 0;
-    background-color: white;
-    transition: all 0.5s ease-in-out;
-}
-
-.titleMenu, .titleContact {
-    width: 100%;
-    border: none;
-    background: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 3vw 3vw 0 0;
-    border-bottom: 1px solid rgba(87, 87, 87, 0.205);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.closeMenu {
-    position: absolute;
-    right: 0;
-    margin-right: 5%;
-    font-size: 7vw;
-    background: white;
-}
-
-.listArea {
-    width: 100%;
-    background-color: white;
-    position: relative;
-    overflow: scroll;
-    height: 85%;
-}
-.listGroup {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: white;
-}
-.listMenu {
-    background-color: white;
-    width: 40%;
-    padding: 3% 0;
-    margin: 5% 3%;
-    text-align: center;
-    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.294);
-    border-radius: 1vw 1vw 1vw 1vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.icons {
-    filter: invert(33%) sepia(94%) saturate(2475%) hue-rotate(201deg) brightness(108%) contrast(102%);
+    transition: all 0.5s ease;
 }
 
 .footer {
@@ -190,9 +54,7 @@
     align-items: center;
     justify-content: center;
     background-color: #F4F4F4;
-    grid-area: footer;
     flex-grow: 0;
-    position: sticky;
-    bottom: 0;
+    padding: 5% 0;
 }
 

@@ -1,5 +1,57 @@
 
+
+#land {
+  min-height: 82vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.flexTitle {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.landTitle {
+  font-size: 12vw;
+  padding: 3% 5%;
+}
+.landBtn {
+  border: none;
+  background-color: rgb(14, 134, 255);
+  color: white;
+  font-size: 4vw;
+  padding: 4% 8%;
+  border-radius: 1vw;
+  margin: 3% 0;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
 .section {
-  padding: 0 5%;
   text-align: justify;
+  padding: 0 5%;
+}
+.section:nth-child(2) {
+  background-color: rgb(245, 245, 245);
+}
+
+.titles {
+  font-size: 10vw;
+  margin-bottom: 2%;
+  text-align: left;
+}
+
+.images {
+  padding: 0 !important;
+}
+
+.text {
+  line-height: 175%;
 }
