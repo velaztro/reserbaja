@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
 			<header className={styles.header} id="blurHeader">
 				<h1 className={styles.headerTitle}>ReserBaja</h1>
-				<h2 className={styles.headerSubtitle}>SEGURIDAD AUTOMOTRIZ</h2>
+				<h5 className={styles.headerSubtitle}>SEGURIDAD AUTOMOTRIZ</h5>
 			</header>
 
 			<main className={styles.main} id="blurMain">

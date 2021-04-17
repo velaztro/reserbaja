@@ -9,12 +9,9 @@ export default function Home() {
 		<Layout home>
 
 			<section id={styles.land}>
+				<Image width={450} height={300} priority="true" loading="eager" alt="seguridad automotriz carro auto alarmas cerrajeria auto estereo auto carro car alarms car stereo car keys duplicate" src="/Images/index/land.jpg" layout="responsive" />
 				<div className={styles.flexTitle}>
-				<h2 className={styles.landTitle}>En <strong style={{ color: '#0e86ff' }}>RESERBAJA</strong> tu carro esta seguro.</h2>
-				<div className={styles.btns}>
-					<button className={styles.landBtn}>Llamanos</button>
-					<button className={styles.landBtn}>WhatsApp</button>
-				</div>
+					<h2 className={styles.landTitle}>En <strong style={{ color: '#0e86ff' }}>RESERBAJA</strong> tu carro esta seguro.</h2>
 				</div>
 			</section>
 
