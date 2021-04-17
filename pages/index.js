@@ -1,21 +1,12 @@
 import Layout from '../components/layout'
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Head from "next/head";
 
 
 export default function Home() {
 	return (
 
 		<Layout home>
-
-			<Head>
-				<link
-					rel="preload"
-					href="/Image/index/land.jpg"
-					as="image"
-				/>
-			</Head>
 
 			<section id={styles.land}>
 				<div className={styles.image}>
