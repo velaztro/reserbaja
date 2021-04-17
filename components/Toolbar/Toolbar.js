@@ -44,7 +44,7 @@ const Toolbar = ({blur}) => {
                 <p className={styles.titleMenu}>Servicios y Productos <span onClick={closeMenu} className={styles.closeMenu}>&#10005;</span></p>
                 <div className={styles.listArea}>
                     <div className={styles.listGroup}>
-                        <Link href="servicios/alarmas" ><a onClick={closeMenu} className={styles.listMenu}>Alarmas</a></Link>
+                        <Link href="/servicios/alarmas" passHref ><a onClick={closeMenu} className={styles.listMenu}>Alarmas</a></Link>
                         <a href="/#/" className={styles.listMenu}>Cerrajeria</a>
                         <a href="/#/" className={styles.listMenu}>Faros</a>
                         <a href="/#/" className={styles.listMenu}>Estereo</a>
