@@ -26,7 +26,7 @@
     padding: 1% 0;
     box-shadow: 0 0 1.5vw 0 rgba(200, 200, 200, 0.815);
     flex-grow: 0;
-    transition: all 0.5s ease;
+    transition: filter 0.5s ease;
 }
 
 .headerTitle {
@@ -45,7 +45,7 @@
 .main {
     flex-grow: 1;
     margin-bottom: 5%;
-    transition: all 0.5s ease;
+    transition: filter 0.5s ease;
 }
 
 .footer {
