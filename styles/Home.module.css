@@ -6,6 +6,10 @@
   flex-direction: column;
 }
 
+.image {
+  min-height: 35vh;
+}
+
 .flexTitle {
   display: flex;
   flex-direction: column;

@@ -13,14 +13,12 @@ const Layout = ({ children }) => {
 	return (
 		<div className={styles.container}>
 			<Head>
+				<title>ReserBaja | Seguridad Automotriz | Auto Alarmas | En Tijuana</title>
+				<link rel="icon" href="/favicon.ico" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="True" />
 				<link rel="dns-prefetch" href="https://fonts.gstatic.com" />
 				<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"></link>
-				<link rel="icon" href="/favicon.ico" />
-				<meta name="description" content="En ReserBaja te ofrecemos servicios relacionados con seguridad automotriz, auto alarmas, cerrajeria automotriz, estereos y mas. En ReserBaja tu carro esta seguro."/>
-				<meta property="og:image" content={`https://og-image.vercel.app/${encodeURI( siteTitle )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}/>
-				<meta name="og:title" content="ReserBaja | Seguridad Automotriz | Auto Alarmas | En Tijuana"/>
-				<title>ReserBaja | Seguridad Automotriz | Auto Alarmas | En Tijuana</title>
+				<meta name="description" content="En ReserBaja te ofrecemos servicios relacionados con seguridad automotriz, auto alarmas, cerrajeria automotriz, estereos y mas. En ReserBaja tu carro esta seguro." />
 			</Head>
 
 			<header className={styles.header} id="blurHeader">
