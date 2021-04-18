@@ -36,3 +36,9 @@ yarn-error.log*
 # VSCode
 .vscode
 .env
+
+sw.js
+service-worker.js
+service-worker.js.map
+workbox*.js
+fallback*.js
