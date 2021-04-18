@@ -17,6 +17,8 @@
   "devDependencies": {
     "prisma": "^2.21.2",
     "webpack-cli": "^4.6.0",
-    "wepack": "^0.0.1"
+    "wepack": "^4.44.1",
+    "webpack-dev-server": "^3.11.0",
+    "terser-webpack-plugin": "^4.2.3"
   }
 }
