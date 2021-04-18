@@ -15,9 +15,6 @@ const Layout = ({ children }) => {
 			<Head>
 				<title>ReserBaja | Seguridad Automotriz | Auto Alarmas | En Tijuana</title>
 				<link rel="icon" href="/favicon.ico" />
-				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="True" />
-				<link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-				<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"></link>
 				<meta name="description" content="En ReserBaja te ofrecemos servicios relacionados con seguridad automotriz, auto alarmas, cerrajeria automotriz, estereos y mas. En ReserBaja tu carro esta seguro." />
 			</Head>
 
@@ -38,6 +35,32 @@ const Layout = ({ children }) => {
 			<Toolbar />
 
 			<style jsx global>{`
+
+				@font-face {
+					font-family: 'Noto Sans JP'
+					src: url('/fonts/woff2/woff2-bold.woff2') format('woff2'),
+					url('/fonts/woff/NotoSansJP-Bold.woff') format('woff'),
+					url('/fonts/ttf/NotoSansJP-Bold.ttf') format('ttf');
+					font-weight: 700;
+					font-style: normal;
+				}
+				@font-face {
+					font-family: 'Noto Sans JP'
+					src: url('/fonts/woff2/woff2-regular.woff2') format('woff2'),
+					url('/fonts/woff/NotoSansJP-Regular.woff') format('woff'),
+					url('/fonts/ttf/NotoSansJP-Regular.ttf') format('ttf');
+					font-weight: 400;
+					font-style: normal;
+				}
+				@font-face {
+					font-family: 'Noto Sans JP'
+					src: url('/fonts/woff2/NotoSansJP-Medium.woff2') format('woff2'),
+					url('/fonts/woff/NotoSansJP-Medium.woff') format('woff'),
+					url('/fonts/ttf/NotoSansJP-Medium.ttf') format('ttf');
+					font-weight: 500;
+					font-style: normal;
+				}
+
                 * {
                     box-sizing: border-box;
                     margin: 0;

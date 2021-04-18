@@ -13,18 +13,18 @@ export default function Home() {
 					<Image width={450} height={300} priority="true" loading="eager" alt="seguridad automotriz carro auto alarmas cerrajeria auto estereo auto carro car alarms car stereo car keys duplicate" src="/Images/index/land.jpg" layout="responsive" />
 				</div>
 				<div className={styles.flexTitle}>
-					<h2 className={styles.landTitle}>En <b style={{color: "#0e86ff"}}>RESERBAJA</b> tu carro esta seguro.</h2>
+					<h2 className={styles.landTitle}>En <span>RESERBAJA</span> tu carro esta seguro.</h2>
 				</div>
 			</section>
 
 			<section className={styles.section}>
 				<h2 className={styles.titles}>Nosotros</h2>
 				<p className={styles.text}>
-					En <strong>RESERBAJA</strong> te ofrecemos excelente calidad en servicios para tu carro, tales como: <strong>alarmas, cerrajeria, estereos, camaras y mas.</strong>
+					Nos ubicamos en <strong>Tijuana</strong>, en uno de los principales bulevares de la ciudad, <strong>Blvd. Federico Benitez.</strong>
 				</p>
 				<Image className={styles.images} width={550} height={420} alt="seguridad automotriz carro auto alarmas cerrajeria auto estereo auto carro car alarms car stereo car keys duplicate" src="/Images/index/car1.png" layout="responsive" />
 				<p className={styles.text}>
-					Nos ubicamos en <strong>Tijuana</strong>, en uno de los principales bulevares de la ciudad, <strong>Blvd. Federico Benitez.</strong>
+					En <strong>RESERBAJA</strong> te ofrecemos excelente calidad en servicios para tu carro, tales como: <strong>alarmas, cerrajeria, estereos, camaras y mas.</strong>
 				</p>
 				<br />
 			</section>
