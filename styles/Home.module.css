@@ -8,6 +8,7 @@
 
 .image {
   min-height: 35vh;
+  width: 100%;
 }
 
 .flexTitle {
@@ -15,12 +16,14 @@
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-around;
+  width: 100%;
 }
 
 .landTitle {
   font-size: 11vw;
   padding: 3% 5%;
   line-height: 1.25;
+  width: 100%;
 }
 .landTitle span {
   color: #0e86ff;

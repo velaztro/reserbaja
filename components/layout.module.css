@@ -29,6 +29,13 @@
     transition: filter 0.5s ease;
 }
 
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .headerTitle {
     font-size: 7vw;
     font-weight: 700;
