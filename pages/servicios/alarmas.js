@@ -12,6 +12,7 @@ const Alarmas = ({ alarmas }) => {
         <Layout>
 
             <Head>
+                <title>ReserBaja - Alarma para tu carro</title>
                 <meta name="description" content="En ReserBaja encuentra la alarma ideal para tu carro. En ReserBaja tu carro esta seguro." />
             </Head>
 
