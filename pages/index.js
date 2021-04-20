@@ -1,4 +1,4 @@
-import Layout from '../components/layout'
+import Layout from '../components/Layout/layout'
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
@@ -24,7 +24,7 @@ export default function Home() {
 				</p>
 				<Image className={styles.images} width={550} height={420} alt="seguridad automotriz carro auto alarmas cerrajeria auto estereo auto carro car alarms car stereo car keys duplicate" src="/Images/index/car1.png" layout="responsive" />
 				<p className={styles.text}>
-					En <strong>RESERBAJA</strong> te ofrecemos excelente calidad en servicios para tu carro, tales como: <strong>alarmas, cerrajeria, estereos, camaras y mas.</strong>
+					En <strong>RESERBAJA</strong> te ofrecemos excelente calidad en servicios para tu carro, tales como: <strong>alarmas para carro, cerrajeria, estereos, camaras y mas.</strong>
 				</p>
 				<br />
 			</section>

@@ -4,15 +4,15 @@ import Link from "next/link";
 import { useState } from 'react'
 
 
-const Toolbar = ({blur}) => {
+const Toolbar = () => {
 
     const [showMe, setShowMe] = useState(false);
     function toggle() {
         setShowMe(true);
         setShowContact(false);
-        document.getElementById('blurMain').style.filter = 'blur(10px)';
-        document.getElementById('blurHeader').style.filter = 'blur(10px)';
-        document.getElementById('blurFooter').style.filter = 'blur(10px)';
+        document.getElementById('blurMain').style.filter = 'blur(5px) brightness(0.5)';
+        document.getElementById('blurHeader').style.filter = 'blur(5px) brightness(0.5)';
+        document.getElementById('blurFooter').style.filter = 'blur(5px) brightness(0.5)';
         document.body.style.overflow = 'hidden';
     }
 
@@ -20,9 +20,9 @@ const Toolbar = ({blur}) => {
     function toggleContact() {
         setShowContact(true);
         setShowMe(false);
-        document.getElementById('blurMain').style.filter = 'blur(10px)';
-        document.getElementById('blurHeader').style.filter = 'blur(10px)';
-        document.getElementById('blurFooter').style.filter = 'blur(10px)';
+        document.getElementById('blurMain').style.filter = 'blur(5px) brightness(0.5)';
+        document.getElementById('blurHeader').style.filter = 'blur(5px) brightness(0.5)';
+        document.getElementById('blurFooter').style.filter = 'blur(5px) brightness(0.5)';
         document.body.style.overflow = 'hidden';
     }
 
@@ -54,7 +54,7 @@ const Toolbar = ({blur}) => {
             </div>
 
             <div id={styles.contactMenu} className={showContact ? styles.show : styles.hide}>
-                <div className={styles.titleContact}>Contacto<span onClick={closeMenu} className={styles.closeMenu}>&#10005;</span></div>
+                <div className={styles.titleContact}><p className={styles.titleMenus}>Contacto</p><span onClick={closeMenu} className={styles.closeMenu}>&#10005;</span></div>
                 <div className={styles.listArea}>
                     <div className={styles.listGroup}>
                         <a target='_blank' rel='noopener' href="https://g.page/ReserBaja?share" className={styles.listMenu}> <Image alt="Ubicacion ReserBaja" className={styles.icons} src="/Images/menu/location.svg" width={50} height={50} />Ubicacion</a>

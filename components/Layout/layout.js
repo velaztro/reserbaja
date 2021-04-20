@@ -1,21 +1,12 @@
 import Head from "next/head";
 import styles from "./layout.module.css";
-//import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
-import { useState } from "react";
-import Toolbar from "./Toolbar/Toolbar";
+import Toolbar from "../Toolbar/Toolbar";
 
-export const siteTitle =
-	"ReserBaja | Seguridad Automotriz | Auto Alarmas | En Tijuana";
 
 const Layout = ({ children }) => {
 	return (
 		<div className={styles.container}>
-			<Head>
-				<title>ReserBaja | Seguridad Automotriz | Auto Alarmas | En Tijuana</title>
-				<link rel="icon" type="image/png" href="/favicon.png" />
-				<meta name="description" content="En ReserBaja te ofrecemos servicios relacionados con seguridad automotriz, auto alarmas, cerrajeria automotriz, estereos y mas. En ReserBaja tu carro esta seguro." />
-			</Head>
 
 			<header className={styles.header} id="blurHeader">
 				<Link href="/">
@@ -78,7 +69,7 @@ const Layout = ({ children }) => {
                 }
 
                 #__next {
-                    height: 100%;
+                    min-height: 100%;
                 }
 
                 a {

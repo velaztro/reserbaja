@@ -51,27 +51,25 @@
 .show, .showContact {
     height: 70vh !important;
     order: 0;
-    opacity: 1;
 }
 .hide {
     height: 0vh !important;
     order: -1;
-    opacity: 0;
 }
 
 #contactMenu, #productsMenu {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 0 ;
-    overflow: hidden;
     position: sticky;
     position: -webkit-sticky;
     bottom: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
     border: none;
     border-radius: 5vw 5vw 0 0;
     background-color: white;
-    transition: all 0.5s ease-in-out;
+    transition: height 0.3s ease-in-out;
 }
 
 .titleMenu, .titleContact {
@@ -86,10 +84,14 @@
     align-items: center;
     justify-content: center;
 }
+.titleMenus {
+    font-size: 5vw;
+}
 .closeMenu {
     position: absolute;
     right: 0;
-    margin-right: 5%;
+    top: 0;
+    margin: 4% 5%;
     font-size: 7vw;
     background: white;
 }

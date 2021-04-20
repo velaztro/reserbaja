@@ -38,7 +38,9 @@ yarn-error.log*
 .env
 
 sw.js
+sw.js.map
 service-worker.js
 service-worker.js.map
 workbox*.js
+workbox*.js.map
 fallback*.js

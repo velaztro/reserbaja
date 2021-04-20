@@ -1,7 +1,7 @@
 
 import styles from "../components/Toolbar/toolbar.module.css";
 import Image from "next/image";
-import Layout from "../components/layout";
+import Layout from "../components/Layout/layout";
 import Head from "next/head";
 
 

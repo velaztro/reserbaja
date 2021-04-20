@@ -10,8 +10,11 @@ class MyDocument extends Document {
         return (
             <Html lang="es-MX">
                 <Head>
+                    <title>ReserBaja | Seguridad Automotriz | Alarma para Carro | En Tijuana</title>
+                    <meta name="description" content="En ReserBaja te ofrecemos servicios relacionados con seguridad para tu carro, alarma para carro, cerrajeria automotriz, GPS, estereos y mas. En ReserBaja tu carro esta seguro." />
                     <link rel="manifest" href="/manifest.webmanifest" />
                     <link rel="apple-touch-icon" href="/icon-192x192.png" />
+                    <link rel="apple-touch-icon" href="/favicon.png" />
                     <link rel="icon" type="image/png" href="/favicon.png" />
                     <meta name="theme-color" content="#fff" />
                     {/* Global site tag (gtag.js) - Google Analytics */}

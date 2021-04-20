@@ -1,6 +1,6 @@
-import Layout from '../../components/layout'
+import Layout from '../../components/Layout/layout'
 import Image from "next/image";
-import styles from './alarmas.module.css'
+import styles from '../../styles/alarmas.module.css'
 import { PrismaClient } from "@prisma/client"
 import Link from 'next/link';
 import Head from "next/head";
@@ -13,7 +13,7 @@ const Alarmas = ({ alarmas }) => {
 
             <Head>
                 <title>ReserBaja - Alarma para tu carro</title>
-                <meta name="description" content="En ReserBaja encuentra la alarma ideal para tu carro. En ReserBaja tu carro esta seguro." />
+                <meta name="description" content="En ReserBaja encuentra la mejor alarma para tu carro en Tijuana. En ReserBaja tu carro esta seguro." />
             </Head>
 
             <section className={styles.section}>
