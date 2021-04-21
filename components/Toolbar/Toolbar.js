@@ -40,7 +40,7 @@ const Toolbar = () => {
 
         <div className={styles.bottom}>
 
-            <div id={styles.productsMenu} className={showMe ? styles.show : styles.hide}>
+            <div className={` ${styles.productsMenu} ${showMe ? styles.show : styles.hide} `}>
                 <p className={styles.titleMenu}>Servicios y Productos <span onClick={closeMenu} className={styles.closeMenu}>&#10005;</span></p>
                 <div className={styles.listArea}>
                     <div className={styles.listGroup}>

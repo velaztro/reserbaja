@@ -5,7 +5,7 @@
     "scope": "/",
     "start_url": "/",
     "name": "ReserBaja",
-    "short_name": "RB",
+    "short_name": "ReserBaja",
     "description": "PWA de ReserBaja",
     "icons": [
         {
