@@ -9,7 +9,7 @@
                 },
                 {
                     "key": "Strict-Transport-Security",
-                    "value": "max-age=2592000; includeSubDomains"
+                    "value": "max-age=2592000; includeSubDomains; preload"
                 },
                 {
                     "key": "X-Frame-Options",
