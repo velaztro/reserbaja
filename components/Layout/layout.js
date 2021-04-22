@@ -8,8 +8,7 @@ const Layout = ({ children }) => {
 		<div className={styles.container}>
 			<Head>
 				<title>ReserBaja | Seguridad Automotriz | Alarma para Carro | En Tijuana</title>
-				<link rel="icon" type="image/png" href="/favicon.png" />
-				<meta name="description" content="En ReserBaja te ofrecemos servicios relacionados con seguridad para tu carro, alarma para carro, cerrajeria automotriz, GPS, estereos y mas. En ReserBaja tu carro esta seguro." />
+				<meta name="description" content="En ReserBaja te ofrecemos alarma para tu carro, cerrajeria automotriz, GPS, estereos y mas. En ReserBaja tu carro esta seguro." />
 			</Head>
 
 			<header className={styles.header} id="blurHeader">
