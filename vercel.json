@@ -17,7 +17,7 @@
                 },
                 {
                     "key": "Content-Security-Policy",
-                    "value": "default-src https: ; script-src https: 'unsafe-inline' https://apis.google.com ; style-src https: 'unsafe-inline' ; img-src data:image 'unsafe-inline'"
+                    "value": "default-src https: ; script-src https: 'unsafe-inline' https://apis.google.com ; style-src https: 'unsafe-inline' ; img-src data: https: 'unsafe-inline' *://*.reserbaja.com:*"
                 },
                 {
                     "key": "X-XSS-Protection",
