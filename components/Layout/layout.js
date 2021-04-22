@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>ReserBaja | Seguridad Automotriz | Alarma para Carro | En Tijuana</title>
+				<title>ReserBaja - Alarma para tu carro - Tijuana, B.C.</title>
 				<meta name="description" content="En ReserBaja te ofrecemos alarma para tu carro, cerrajeria automotriz, GPS, estereos y mas. En ReserBaja tu carro esta seguro." />
 			</Head>
 
