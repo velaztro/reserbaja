@@ -5,29 +5,31 @@ import Toolbar from "../Toolbar/Toolbar";
 
 const Layout = ({ children }) => {
 	return (
-		<div className={styles.container}>
-			<Head>
-				<title>ReserBaja - Alarma para tu carro - Tijuana, B.C.</title>
-				<meta name="description" content="En ReserBaja te ofrecemos alarma para tu carro, cerrajeria automotriz, GPS, estereos y mas. En ReserBaja tu carro esta seguro." />
-			</Head>
+		<>
+			<div id='cont' className={styles.container}>
+				<Head>
+					<title>Reser Baja - Alarma para tu carro - Tijuana, B.C.</title>
+					<meta name="description" content="En Reser Baja te ofrecemos alarma para tu carro, cerrajeria automotriz, GPS, estereos y mas. En Reser Baja tu carro esta seguro." />
+				</Head>
 
-			<header className={styles.header} id="blurHeader">
-				<Link href="/">
-					<div className={styles.title}>
-						<h1 className={styles.headerTitle}>ReserBaja</h1>
-						<span className={styles.headerSubtitle}>SEGURIDAD AUTOMOTRIZ</span>
-					</div>
-				</Link>
-			</header>
+				<header className={styles.header} id="blurHeader">
+					<Link href="/">
+						<div className={styles.title}>
+							<h1 className={styles.headerTitle}>ReserBaja</h1>
+							<span className={styles.headerSubtitle}>SEGURIDAD AUTOMOTRIZ</span>
+						</div>
+					</Link>
+				</header>
 
-			<main className={styles.main} id="blurMain">
-				{children}
-			</main>
+				<main className={styles.main} id="blurMain">
+					{children}
+				</main>
 
-			<footer className={styles.footer} id="blurFooter">
-				<p>RESERBAJA 2021</p>
-				<p>Tijuana, Baja California, Mexico</p>
-			</footer>
+				<footer className={styles.footer} id="blurFooter">
+					<p>RESERBAJA 2021</p>
+					<p>Tijuana, Baja California, Mexico</p>
+				</footer>
+			</div>
 
 			<Toolbar />
 
@@ -80,7 +82,8 @@ const Layout = ({ children }) => {
                     text-decoration: none;
                 }
             `}</style>
-		</div>
+
+		</>
 	);
 };
 

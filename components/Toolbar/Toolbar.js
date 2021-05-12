@@ -10,29 +10,23 @@ const Toolbar = () => {
     function toggle() {
         setShowMe(true);
         setShowContact(false);
-        document.getElementById('blurMain').style.filter = 'blur(5px) brightness(0.5)';
-        document.getElementById('blurHeader').style.filter = 'blur(5px) brightness(0.5)';
-        document.getElementById('blurFooter').style.filter = 'blur(5px) brightness(0.5)';
-        document.body.style.overflow = 'hidden';
+        document.getElementById('cont').style.overflow = 'hidden';
+        document.body.firstChild.firstChild.style.filter = 'brightness(0.3)';
     }
 
     const [showContact, setShowContact] = useState(false);
     function toggleContact() {
         setShowContact(true);
         setShowMe(false);
-        document.getElementById('blurMain').style.filter = 'blur(5px) brightness(0.5)';
-        document.getElementById('blurHeader').style.filter = 'blur(5px) brightness(0.5)';
-        document.getElementById('blurFooter').style.filter = 'blur(5px) brightness(0.5)';
-        document.body.style.overflow = 'hidden';
+        document.getElementById('cont').style.overflow = 'hidden';
+        document.body.firstChild.firstChild.style.filter = 'brightness(0.3)';
     }
 
     function closeMenu() {
         setShowMe(false);
         setShowContact(false);
-        document.getElementById('blurMain').style.filter = 'none';
-        document.getElementById('blurHeader').style.filter = 'none';
-        document.getElementById('blurFooter').style.filter = 'none';
-        document.body.style.overflow = 'initial';
+        document.getElementById('cont').style.overflow = 'initial';
+        document.body.firstChild.firstChild.style.filter = 'none';
     }
     
 

@@ -101,7 +101,7 @@ export default function Home() {
 			</section>
 
 			<section className={styles.section}>
-				<h1 className={styles.titles}>Dicen de nosotros</h1>
+				<h2 className={styles.titles}>Dicen de nosotros</h2>
 			</section>
 
 
