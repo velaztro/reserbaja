@@ -15,7 +15,7 @@ export default function Home() {
 				{
 					"@context": "https://schema.org",
 					"@type": "AutoRepair",
-					"name": "ReserBaja",
+					"name": "Reser Baja",
 					"image": "https://scontent.ftij1-2.fna.fbcdn.net/v/t1.6435-9/121831665_1774147389415170_8025320505899116000_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_eui2=AeH5sb8Ls9Q7gQ5A4zNrCx3sehSQWJMxjwR6FJBYkzGPBFHPzRfB7UKC252RedVHiqoCtRGPmjUivOunoBOVHqQ-&_nc_ohc=D8O2S0g4kSUAX_5foza&_nc_ht=scontent.ftij1-2.fna&oh=39b7fda7687e6044f8a3caead3c83b2c&oe=60A609EF",
 					"@id": "https://reserbaja.com",
 					"url": "https://reserbaja.com",

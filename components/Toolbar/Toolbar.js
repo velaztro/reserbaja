@@ -10,7 +10,7 @@ const Toolbar = () => {
     function toggle() {
         setShowMe(true);
         setShowContact(false);
-        document.getElementById('cont').style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
         document.body.firstChild.firstChild.style.filter = 'brightness(0.3)';
     }
 
@@ -18,15 +18,15 @@ const Toolbar = () => {
     function toggleContact() {
         setShowContact(true);
         setShowMe(false);
-        document.getElementById('cont').style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
         document.body.firstChild.firstChild.style.filter = 'brightness(0.3)';
     }
 
     function closeMenu() {
         setShowMe(false);
         setShowContact(false);
-        document.getElementById('cont').style.overflow = 'initial';
         document.body.firstChild.firstChild.style.filter = 'none';
+        document.body.style.overflow = 'initial';
     }
     
 
@@ -38,7 +38,7 @@ const Toolbar = () => {
                 <p className={styles.titleMenu}>Servicios y Productos <span onClick={closeMenu} className={styles.closeMenu}>&#10005;</span></p>
                 <div className={styles.listArea}>
                     <div className={styles.listGroup}>
-                        <Link href="/servicios/alarmas" passHref ><a onClick={closeMenu} className={styles.listMenu}>Alarmas</a></Link>
+                        <Link href="/servicios/alarmas" passHref ><a onClick={closeMenu} className={styles.listMenu}><Image alt="Alarma para tu carro" className={styles.icons} width={50} height={50} src="/Images/servicios/alarmas.svg" />Alarmas</a></Link>
                         <a href="/#/" className={styles.listMenu}>Cerrajeria</a>
                         <a href="/#/" className={styles.listMenu}>Faros</a>
                         <a href="/#/" className={styles.listMenu}>Estereo</a>
