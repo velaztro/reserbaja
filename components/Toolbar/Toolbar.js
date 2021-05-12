@@ -64,16 +64,16 @@ const Toolbar = () => {
             <div className={styles.nav}>
                 <Link href='/'>
                     <button onTouchStart={null} className={styles.navList} onClick={closeMenu}>
-                        <Image alt="Inicio ReserBaja" src="/Images/home.svg" alt='pagina de inicio' width={30} height={30} />
+                        <Image priority="true" loading="eager" alt="Inicio ReserBaja" src="/Images/home.svg" alt='pagina de inicio' width={30} height={30} />
                         <span>Inicio</span>
                     </button>
                 </Link>
                 <button onTouchStart={null} className={styles.navList} onClick={toggle} >
-                    <Image alt="Alarmas estereos cerrajeria auto carro ReserBaja" src="/Images/product.svg" alt='menu de servicios' width={30} height={30} />
+                    <Image priority="true" loading="eager" alt="Alarmas estereos cerrajeria auto carro ReserBaja" src="/Images/product.svg" alt='menu de servicios' width={30} height={30} />
                     <span>Servicios</span>
                 </button>
                 <button onTouchStart={null} className={styles.navList} onClick={toggleContact} >
-                    <Image alt="Contacto Informacion ReserBaja" src="/Images/contact.svg" alt='menu de contacto' width={30} height={30} />
+                    <Image priority="true" loading="eager" alt="Contacto Informacion ReserBaja" src="/Images/contact.svg" alt='menu de contacto' width={30} height={30} />
                     <span>Contacto</span>
                 </button>
             </div>
