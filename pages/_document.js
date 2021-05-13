@@ -20,7 +20,7 @@ class MyDocument extends Document {
                     <meta name="theme-color" content="#f4f4f4" />
                     {/* Global site tag (gtag.js) - Google Analytics */}
                     <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}></script>
-                    <script
+                    {/*<script
                         dangerouslySetInnerHTML={{
                             __html: `
                             window.dataLayer = window.dataLayer || [];
@@ -33,7 +33,7 @@ class MyDocument extends Document {
                             });
                             `,
                         }}
-                    />
+                    />*/}
                 </Head>
                 <body>
                     <Main />
