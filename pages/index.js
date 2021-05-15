@@ -10,7 +10,7 @@ export default function Home() {
 
 			<section id={styles.land}>
 				<div className={styles.image}>
-					<Image width={525} height={350} priority loading="eager" layout="responsive" alt="seguridad automotriz carro auto alarmas cerrajeria auto estereo auto carro car alarms car stereo car keys duplicate" src="/Images/index/land.jpg" />
+					<Image width={525} height={350} priority alt="seguridad automotriz carro auto alarmas cerrajeria auto estereo auto carro car alarms car stereo car keys duplicate" src="/Images/index/land.jpg" />
 				</div>
 				<div className={styles.flexTitle}>
 					<h2 className={styles.landTitle}>En <span>RESERBAJA</span> tu carro esta seguro.</h2>
