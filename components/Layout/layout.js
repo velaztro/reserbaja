@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
 			<div id='cont' className={styles.container}>
 				<Head>
 					<title>Reser Baja - Alarma para tu carro - Tijuana, B.C.</title>
-					<meta name="description" content="En Reser Baja te ofrecemos alarma para tu carro, cerrajeria automotriz, GPS, estereos y mas. En Reser Baja tu carro esta seguro." />
+					<meta name="description" content="En Reser Baja te ofrecemos alarma para tu carro, cerrajeria automotriz, GPS, estereos y mas. En Reser Baja tu carro esta seguro. Tijuana, BC." />
 				</Head>
 
 				<header className={styles.header} id="blurHeader">
