@@ -1,7 +1,7 @@
 import Layout from '../components/Layout/layout'
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-
+import Script from 'next/script'
 
 export default function Home() {
 	return (
