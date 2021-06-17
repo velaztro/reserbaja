@@ -18,8 +18,9 @@ class MyDocument extends Document {
                     <link rel="shortcut icon" href="/favicons/favicon.ico?v=Gv6nAlj7bz" />
                     <meta name="theme-color" content="#f4f4f4" />
                     {/* Global site tag (gtag.js) - Google Analytics */}
-                    <script
-                        src="https://www.googletagmanager.com/gtag/js?id=G-GPMR08P54M"
+                    <Script
+                        src= "https://www.googletagmanager.com/gtag/js?id=G-GPMR08P54M"
+                        strategy="afterInteractive"
                     />
                     <script
                         dangerouslySetInnerHTML={{
