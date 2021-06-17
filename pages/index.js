@@ -41,6 +41,9 @@ export default function Home() {
 				<h2 className={styles.titles}>Dicen de nosotros</h2>
 			</section>
 
+			<Script
+				src="https://www.googletagmanager.com/gtag/js?id=G-GPMR08P54M"
+			/>
 
 		</Layout >
 
