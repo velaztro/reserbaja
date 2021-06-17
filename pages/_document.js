@@ -17,22 +17,6 @@ class MyDocument extends Document {
                     <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg?v=Gv6nAlj7bz" color="#5bbad5" />
                     <link rel="shortcut icon" href="/favicons/favicon.ico?v=Gv6nAlj7bz" />
                     <meta name="theme-color" content="#f4f4f4" />
-                    {/* Global site tag (gtag.js) - Google Analytics */}
-
-                    <script
-                        dangerouslySetInnerHTML={{
-                            __html: `
-                            window.dataLayer = window.dataLayer || [];
-                            function gtag(){
-                                dataLayer.push(arguments);
-                            }
-                            gtag('js', new Date());
-                            gtag('config', 'G-GPMR08P54M', {
-                                page_path: window.location.pathname,
-                            });
-                            `,
-                        }}
-                    />
                 </Head>
                 <body>
                     <Main />

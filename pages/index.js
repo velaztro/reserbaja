@@ -43,6 +43,14 @@ export default function Home() {
 
 			<Script
 				src="https://www.googletagmanager.com/gtag/js?id=G-GPMR08P54M"
+				onLoad={() => {
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){
+						dataLayer.push(arguments);
+					}
+					gtag('js', new Date());
+					gtag('config', 'G-GPMR08P54M');
+				}}
 			/>
 
 		</Layout >
