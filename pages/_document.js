@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 
 class MyDocument extends Document {
     static async getInitialProps(ctx) {
@@ -19,7 +20,10 @@ class MyDocument extends Document {
                     <meta name="msapplication-TileColor" content="#b91d47" />
                     <meta name="theme-color" content="#f4f4f4" />
                     {/* Global site tag (gtag.js) - Google Analytics */}
-                    <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}></script>
+                    <Script
+                        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+                        strategy="afterInteractive"
+                    />
                     <script
                         dangerouslySetInnerHTML={{
                             __html: `
