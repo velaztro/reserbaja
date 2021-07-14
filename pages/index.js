@@ -3,6 +3,9 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Script from "next/script";
 import Head from 'next/head';
+import Pic from '../public/Images/index/land.jpg'
+import Car1 from "../public/Images/index/car1.png"
+
 
 export default function Home() {
 	return (
@@ -32,7 +35,7 @@ export default function Home() {
 
 			<section id={styles.land}>
 				<div className={styles.image}>
-					<Image width={525} height={350} priority layout="responsive" alt="seguridad automotriz carro auto alarmas cerrajeria auto estereo auto carro car alarms car stereo car keys duplicate" src="/Images/index/land.jpg" />
+					<Image src={Pic} priority layout="responsive" alt="seguridad automotriz carro auto alarmas cerrajeria auto estereo auto carro car alarms car stereo car keys duplicate" />
 				</div>
 				<div className={styles.flexTitle}>
 					<h2 className={styles.landTitle}>En <span>RESERBAJA</span> tu carro esta seguro.</h2>
@@ -41,10 +44,12 @@ export default function Home() {
 
 			<section className={styles.section}>
 				<h2 className={styles.titles}>Nosotros</h2>
-				<p className={styles.text}>
-					Nos ubicamos en <strong>Tijuana</strong>, en uno de los principales bulevares de la ciudad, <strong>Blvd. Federico Benitez.</strong>
-				</p>
-				<Image className={styles.images} width={550} height={420} alt="seguridad automotriz carro auto alarmas cerrajeria auto estereo auto carro car alarms car stereo car keys duplicate" src="/Images/index/car1.png" layout="responsive" />
+				<div className={styles.nosotros}>
+					<p className={styles.text}>
+						Nos ubicamos en <strong>Tijuana</strong>, en uno de los principales bulevares de la ciudad, <strong>Blvd. Federico Benitez.</strong>
+					</p>
+					<Image src={Car1} className={styles.images} alt="seguridad automotriz carro auto alarmas cerrajeria auto estereo auto carro car alarms car stereo car keys duplicate"  />
+				</div>
 				<p className={styles.text}>
 					En <strong>RESERBAJA</strong> te ofrecemos excelente calidad en servicios para tu carro, tales como: <strong>alarmas para carro, cerrajeria, estereos, camaras y mas.</strong>
 				</p>

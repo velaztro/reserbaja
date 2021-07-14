@@ -43,10 +43,41 @@
   text-align: left;
 }
 
-.images {
-  padding: 0 !important;
-}
-
 .text {
   line-height: 175%;
+}
+
+
+@media  (min-width: 600px) {
+  #land {
+    flex-direction: row;
+    align-items: center;
+    min-height: auto;
+    padding: 5% 5%;
+
+  }
+  .flexTitle > h2 {
+    font-size: 2.5rem;
+  }
+  .image {
+    min-height: auto;
+  }
+
+  .titles {
+    font-size: 2.5em;
+  }
+
+  .nosotros {
+    display: flex;
+    align-items: center;
+  }
+  .nosotros p {
+    width: 50%;
+    margin-right: 5%;
+  }
+
+  .text {
+    font-size: 1.25em;
+  }
+  
 }

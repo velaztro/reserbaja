@@ -63,3 +63,13 @@
     padding: 5% 0;
 }
 
+
+@media  (min-width: 600px) {
+    .headerTitle {
+        font-size: 2.5em;
+    }
+    .headerSubtitle {
+        font-size: 1.35em;
+    }
+}
+
