@@ -71,8 +71,17 @@
     display: flex;
     align-items: center;
   }
+  .ofrecemos {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .ofrecemos p {
+    width: 60%;
+    margin-left: 5%;
+  }
   .nosotros p {
-    width: 50%;
+    width: 60%;
     margin-right: 5%;
   }
 

@@ -5,6 +5,7 @@ import Script from "next/script";
 import Head from 'next/head';
 import Pic from '../public/Images/index/land.jpg'
 import Car1 from "../public/Images/index/car1.png"
+import Car2 from "../public/Images/index/car2.png"
 
 
 export default function Home() {
@@ -48,20 +49,19 @@ export default function Home() {
 					<p className={styles.text}>
 						Nos ubicamos en <strong>Tijuana</strong>, en uno de los principales bulevares de la ciudad, <strong>Blvd. Federico Benitez.</strong>
 					</p>
-					<Image src={Car1} className={styles.images} alt="seguridad automotriz carro auto alarmas cerrajeria auto estereo auto carro car alarms car stereo car keys duplicate"  />
+					<Image src={Car1} className={styles.images} alt="seguridad automotriz carro auto alarmas cerrajeria auto estereo auto carro car alarms car stereo car keys duplicate" />
 				</div>
-				<p className={styles.text}>
-					En <strong>RESERBAJA</strong> te ofrecemos excelente calidad en servicios para tu carro, tales como: <strong>alarmas para carro, cerrajeria, estereos, camaras y mas.</strong>
-				</p>
-				<br />
 			</section>
 
 			<section className={styles.section}>
 				<h2 className={styles.titles}>Lo que ofrecemos</h2>
-				<p className={styles.text}>
-					Encuentras con nosotros marcas de alarmas como <strong>Viper, Pointer.</strong>
-				</p>
-				<Image width={550} height={420} alt="seguridad automotriz carro auto alarmas cerrajeria auto estereo auto carro car alarms car stereo car keys duplicate" src="/Images/index/car2.png" layout="responsive" />
+				<div className={styles.ofrecemos}>
+					<p className={styles.text}>
+						En <strong>RESERBAJA</strong> te ofrecemos excelente calidad en servicios para tu carro, tales como: <strong>alarmas para carro, cerrajeria, estereos, camaras y mas.</strong><br /><br />
+						Encuentras con nosotros marcas de alarmas como <strong>Viper, Pointer.</strong>
+					</p>
+					<Image alt="seguridad automotriz carro auto alarmas cerrajeria auto estereo auto carro car alarms car stereo car keys duplicate" src={Car2} />
+				</div>
 			</section>
 
 			<section className={styles.section}>

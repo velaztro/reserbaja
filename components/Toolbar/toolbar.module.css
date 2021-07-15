@@ -128,3 +128,16 @@
     padding-bottom: 100px;
     filter: invert(33%) sepia(94%) saturate(2475%) hue-rotate(201deg) brightness(108%) contrast(102%);
 }
+
+@media  (min-width: 600px) {
+
+    .nav {
+        height: 12vw;
+    }
+    .navList {
+        font-size: 1.3em;
+    }
+    .navList img {
+        width: 44px;
+    }
+}

@@ -65,6 +65,11 @@
 
 
 @media  (min-width: 600px) {
+
+    .header {
+        height: 12vw;
+    }
+
     .headerTitle {
         font-size: 2.5em;
     }
